@@ -141,7 +141,7 @@
     margin-right: 15px;
 }
 
-@media (max-width: 1064px) {
+@media (max-width: 1222px) {
     .tournament {
         width: 764px;
     }
@@ -166,27 +166,13 @@
     .tournament__players-image {
         margin: 24px 0;
     }
+
+    .tournament__collage {
+        margin: 0 0 24px;
+    }
 }
 
 @media (max-width: 800px) {
-    .tournament {
-        width: 704px;
-    }
-
-    .tournament__title {
-        font-size: 28px;
-    }
-
-    .tournament__title--mobile {
-        width: 400px;
-    }
-
-    .tournament__collage {
-        margin: 0 0 20px;
-    }
-}
-
-@media (max-width: 600px) {
     .tournament {
         width: 335px;
         margin-top: 48px;
@@ -249,6 +235,5 @@
     .tournament__collage {
         width: 374px;
         height: 401px;
-        margin: 0;
     }
 }
