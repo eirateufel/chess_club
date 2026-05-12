@@ -39,12 +39,12 @@
                 Оплатите взнос на телеграммы для организации Международного васюкинского турнира по шахматам
             </h1>
             <div class="header__button-container">
-                <button class="header__button header__button--solid">
+                <a class="header__button header__button--solid" href="#tournament">
                     Поддержать шахматную мысль
-                </button>
-                <button class="header__button header__button--transparent">
+                </a>
+                <a class="header__button header__button--transparent" href="#tournament__meta">
                     Подробнее о турнире
-                </button>
+                </a>
             </div>
         </div>
     </header>
@@ -70,7 +70,7 @@
         </div>
     </div>
     <div class="main">
-        <div class="tournament">
+        <div class="tournament" id="tournament">
             <div class="tournament__intro">
                 <h2 class="tournament__title tournament__title--upper tournament__title--desktop">
                     Чтобы поддержать Международный васюкинский турнир посетите лекцию на тему:
@@ -97,7 +97,7 @@
                         гроссмейстера О. Бендера
                     </h2>
 
-                    <div class="tournament__meta">
+                    <div class="tournament__meta" id="tournament__meta">
                         <div class="tournament__row">
                             <div class="tournament__cell tournament__cell--left">
                                 Место проведения:
@@ -228,7 +228,94 @@
                 </div>
             </div>
         </div>
+
+        <div class="participants">
+            <h2 class="participants__header">Участники турнира</h2>
+            <div class="participants__carousel-controls">
+                <div class="participants__carousel-button participants__carousel-button--left">
+                    <img class="participants__button-image" src="./assets/vectors/carousel_button.svg">
+                </div>
+
+                <div class="participants__counter">
+                    <p class="participants__counter-text participants__slide-index">3</p>
+                    <p class="participants__counter-text participants__count-delimiter">/</p>
+                    <p class="participants__counter-text participants__total">6</p>
+                </div>
+
+                <div class="participants__carousel-button participants__carousel-button--right">
+                    <img class="participants__button-image" src="./assets/vectors/carousel_button.svg">
+                </div>
+            </div>
+
+            <div class="participants__list">
+                <div class="participants__participant">
+                    <img class="participants__portrait" src="./assets/images/participant.png">
+                    <p class="participants__name">Хозе-Рауль Капабланка</p>
+                    <p class="participants__rank">Чемпион мира по шахматам</p>
+                    <button class="participants__more-button">Подробнее</button>
+                </div>
+
+                <div class="participants__participant">
+                    <img class="participants__portrait" src="./assets/images/participant.png">
+                    <p class="participants__name">Эммануил Ласкер</p>
+                    <p class="participants__rank">Чемпион мира по шахматам</p>
+                    <button class="participants__more-button">Подробнее</button>
+                </div>
+
+                <div class="participants__participant">
+                    <img class="participants__portrait" src="./assets/images/participant.png">
+                    <p class="participants__name">Александр Алехин</p>
+                    <p class="participants__rank">Чемпион мира по шахматам</p>
+                    <button class="participants__more-button">Подробнее</button>
+                </div>
+
+                <div class="participants__participant">
+                    <img class="participants__portrait" src="./assets/images/participant.png">
+                    <p class="participants__name">Арон Нимцович</p>
+                    <p class="participants__rank">Чемпион мира по шахматам</p>
+                    <button class="participants__more-button">Подробнее</button>
+                </div>
+
+                <div class="participants__participant">
+                    <img class="participants__portrait" src="./assets/images/participant.png">
+                    <p class="participants__name">Рихард Рети</p>
+                    <p class="participants__rank">Чемпион мира по шахматам</p>
+                    <button class="participants__more-button">Подробнее</button>
+                </div>
+
+                <div class="participants__participant">
+                    <img class="participants__portrait" src="./assets/images/participant.png">
+                    <p class="participants__name">Остап Бендер</p>
+                    <p class="participants__rank">Гроссмейстер</p>
+                    <button class="participants__more-button">Подробнее</button>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="marquee">
+        <div class="marquee__track">
+            <div class="marquee__content">
+                <span class="marquee__item marquee__text">Дело помощи утопающим — дело рук самих утопающих!</span>
+                <div class="marquee__item  marquee__delimiter"></div>
+                <span class="marquee__item marquee__text">Шахматы двигают вперед не только культуру, но и экономику!</span>
+                <div class="marquee__item  marquee__delimiter"></div>
+                <span class="marquee__item marquee__text">Лед тронулся, господа присяжные заседатели!</span>
+                <div class="marquee__item  marquee__delimiter"></div>
+            </div>
+
+            <div class="marquee__content">
+                <span class="marquee__item marquee__text">Дело помощи утопающим — дело рук самих утопающих!</span>
+                <div class="marquee__item  marquee__delimiter"></div>
+                <span class="marquee__item marquee__text">Шахматы двигают вперед не только культуру, но и экономику!</span>
+                <div class="marquee__item  marquee__delimiter"></div>
+                <span class="marquee__item marquee__text">Лед тронулся, господа присяжные заседатели!</span>
+                <div class="marquee__item  marquee__delimiter"></div>
+            </div>
+        </div>
     </div>
     <script src="js/main.js" defer></script>
+    <script src="js/participants.js" defer></script>
 </body>
 </html>

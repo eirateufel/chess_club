@@ -21,3 +21,8 @@ textarea {
     box-shadow: none;
     background: none;
 }
+
+a {
+  color: inherit;
+  text-decoration: none;
+}

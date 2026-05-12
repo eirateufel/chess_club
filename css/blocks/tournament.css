@@ -89,6 +89,7 @@
 /* table */
 .tournament__meta {
     margin-top: 60px;
+    scroll-margin-top: 40px;
 }
 
 .tournament__row {

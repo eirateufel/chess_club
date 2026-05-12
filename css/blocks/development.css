@@ -124,9 +124,7 @@
 }
 
 .development__carousel-controls {
-    width: 178px;
-    display: flex;
-    margin-top: 28px;
+    display: none;
 }
 
 .development__progress {
@@ -158,12 +156,16 @@
     padding-left: 12px;
 }
 
-.development__carousel-button--right .development__button-image {
-    transform: rotate(180deg);
-}
-
 .development__carousel-button--right {
     padding-left: 14px;
+}
+
+.development__carousel-button--left .development__button-image {
+    transform: translateY(1px);
+}
+
+.development__carousel-button--right .development__button-image {
+    transform: rotate(180deg);
 }
 
 .development__progress-dot {
@@ -177,7 +179,7 @@
     background-color: var(--color-carousel-button);
 }
 
-@media (max-width: 1420px) {
+@media (max-width: 1300px) {
     .development {
         width: 335px;
     }
@@ -242,6 +244,12 @@
         position: absolute;
         left: 180px;
         top: 80px;
+    }
+
+    .development__carousel-controls {
+        width: 178px;
+        display: flex;
+        margin-top: 28px;
     }
 }
 
