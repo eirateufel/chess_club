@@ -202,6 +202,16 @@
   }
 }
 
+@keyframes rotateClockwise {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 
 @media (max-width: 1222px) {
     .header {
@@ -232,6 +242,7 @@
         width: 298px;
         bottom: 67px;
         left: 433px;
+        animation: rotateClockwise 30s linear infinite;
     }
 
     .header__city {
@@ -258,6 +269,7 @@
         width: 98px;
         bottom: -20px;
         left: 549px;
+        animation: none;
     }
 
     .header__chess-item--bottom-right {
