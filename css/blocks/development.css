@@ -8,6 +8,7 @@
     margin: 200px 0 120px;
 }
 
+/* ====== header ======*/
 .development__header {
     width: 800px;
     margin: 0;
@@ -123,6 +124,7 @@
     top: 351px;
 }
 
+/* ====== carousel controls ======*/
 .development__carousel-controls {
     display: none;
 }
