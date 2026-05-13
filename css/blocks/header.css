@@ -32,21 +32,25 @@
 .header__chess-item--top-left {
     bottom: 164px;
     left: 849px;
+    animation: dropBounce 3s ease-out forwards;
 }
 
 .header__chess-item--top-right {
     bottom: 270px;
     left: 1182px;
+    animation: dropBounce 4s ease-out forwards;
 }
 
 .header__chess-item--bottom-left {
     bottom: -51px;
     left: 956px;
+    animation: upDownRotate 2s ease-out forwards;
 }
 
 .header__chess-item--bottom-right {
     bottom: 20px;
     left: 1359px;
+    animation: upDownRotate 4s ease-out forwards;
 }
 
 .header__circle {
@@ -161,6 +165,43 @@
     background-color: var(--color-button-header-main);
     color: var(--color-text-light);
 }
+
+@keyframes dropBounce {
+  0% {
+    transform: translateY(-220px);
+    opacity: 0;
+  }
+
+  30% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  60% {
+    transform: translateY(-20px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes upDownRotate {
+  0% {
+    transform: translateY(50px) rotate(-30deg);
+    opacity: 0;
+  }
+
+  40% {
+    transform: translateY(-55px) rotate(-5deg);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+}
+
 
 @media (max-width: 1222px) {
     .header {
